@@ -7,7 +7,7 @@ def count_bits(x):
     while x:
         if x & 1:
             num += 1
-        x >> 1
+        x = x >> 1
     return num
 
 
