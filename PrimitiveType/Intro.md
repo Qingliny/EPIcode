@@ -11,8 +11,14 @@ or  | :  ```1|2 -> 01 | 10 -> 11 -> 3  ```
 右移 >> ：```8 >> 2 -> 1000 >> 2 -> 0010 -> 2			#相当于除4  ```
 	``` -16 >> 2 -> -10000 >> 2 -> -100 -> -4		```
 左移 << : ``` 1 << 2 -> 1 << 2 -> 100 -> 4				#相当于乘4```
-no  ~ :  ``` ~0 -> 1   ```
+no  ~ :  ``` ~0 -> -1  -> ~x = -x-1  有符号的二进制数按位取反，x的补码 ```
 xor ^ :  ```2 ^ 3 -> 10 ^ 11 -> 01 -> 1	  ```
+
+**x & (x-1) == x with its lowest set bit erased**
+**x & ～(x-1) == isolate the lowest bit that is 1 in x**
+_use to lower the time complexity_
+x = 11010
+res = 11000
 
 # numeric type
 abs(-34.5)  
@@ -38,3 +44,8 @@ number_list = [7, 14, 21, 28, 35, 42, 49, 56, 63, 70]
 random.shuffle(number_list)  
 print("List after first shuffle  : ", number_list) 
 ```
+# Parity
+##### parity of a binary word is 1 if the number of 1s in the word is odd, otherwise, it is 0   
+parity of 1001100 is 1, 10001110 is 0
+
+
