@@ -39,6 +39,8 @@ random.randint(8,16). -> generate an integer
 random.random(). -> generate float
 random.choice(A). -> A is a list or any sequence
 random.shuffle(A). -> 
+```python
 	number_list = [7, 14, 21, 28, 35, 42, 49, 56, 63, 70].  
 	random.shuffle(number_list).  
     print("List after first shuffle  : ", number_list). 
+```
