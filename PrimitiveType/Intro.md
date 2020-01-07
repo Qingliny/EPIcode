@@ -44,8 +44,23 @@ number_list = [7, 14, 21, 28, 35, 42, 49, 56, 63, 70]
 random.shuffle(number_list)  
 print("List after first shuffle  : ", number_list) 
 ```
-# Parity
+# 4.1 Parity
 ##### parity of a binary word is 1 if the number of 1s in the word is odd, otherwise, it is 0   
-parity of 1001100 is 1, 10001110 is 0
+parity of 1001100 is 1, 10001110 is 0.   
+
+# 4.2 swap bits
+Use **BitMask** and **XOR** to flip the value.   
+x XOR 1:    
+if x == 0: x^1 = 1;    
+if x == 1: x^1 = 0;    
+
+
+
+
+
+
+
+
+
 
 
